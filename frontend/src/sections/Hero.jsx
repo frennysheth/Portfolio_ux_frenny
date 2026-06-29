@@ -160,7 +160,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Sticker / annotation */}
-          <div className="absolute bottom-[30%] left-1/2 -translate-x-1/2 z-50 pointer-events-none">
+          <div className="absolute bottom-[15%] left-0 z-50 pointer-events-none">
             <motion.div
               initial={{ rotate: -8, scale: 0.6, opacity: 0 }}
               animate={{ rotate: -8, scale: 1, opacity: 1 }}

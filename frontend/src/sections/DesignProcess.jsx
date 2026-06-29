@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { PROCESS } from "@/constants/testIds";
 import { Annotation, StickyNote } from "@/components/Scrapbook";
+import { DoodleArrow, Stamp, CoffeeRing } from "@/components/Doodles";
 
 const STEPS = [
   { key: "discover", title: "Discover", note: "interview, observe, eavesdrop kindly", color: "#FCE3E8" },
@@ -16,8 +17,9 @@ export default function DesignProcess() {
     <section
       id="process"
       data-testid={PROCESS.root}
-      className="relative bg-paper-grain py-24 md:py-32"
+      className="relative bg-paper-grain py-24 md:py-32 overflow-hidden"
     >
+      <CoffeeRing className="right-14 top-44 hidden md:block" />
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="text-center md:text-left">
           <span className="text-xs uppercase tracking-[0.4em] text-wine font-medium">
@@ -80,8 +82,11 @@ export default function DesignProcess() {
           </ul>
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-16 text-center relative">
           <Annotation>↑ the loop never really ends</Annotation>
+          <div className="absolute inset-0 flex justify-center pointer-events-none">
+            <Stamp rotate="-rotate-3" className="mt-12">Iterate · Always</Stamp>
+          </div>
         </div>
       </div>
     </section>

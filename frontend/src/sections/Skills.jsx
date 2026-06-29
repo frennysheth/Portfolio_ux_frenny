@@ -2,14 +2,17 @@ import { motion } from "framer-motion";
 import { SKILL_GROUPS } from "@/data/portfolio";
 import { SKILLS as TIDS } from "@/constants/testIds";
 import { Annotation } from "@/components/Scrapbook";
+import { DoodleArrow, DoodleStar, CoffeeRing, Stamp } from "@/components/Doodles";
 
 export default function Skills() {
   return (
     <section
       id="skills"
       data-testid={TIDS.root}
-      className="relative bg-paper-grain py-24 md:py-32"
+      className="relative bg-paper-grain py-24 md:py-32 overflow-hidden"
     >
+      <CoffeeRing className="left-10 top-40 hidden md:block" small />
+      <DoodleStar className="absolute right-1/4 top-20 hidden md:block" size={22} />
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="flex items-end justify-between flex-wrap gap-4">
           <div>

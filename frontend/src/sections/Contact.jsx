@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Mail, Linkedin, Loader2, Send, FileText, ExternalLink } from "lucide-react";
 import { CONTACT } from "@/constants/testIds";
 import { Annotation } from "@/components/Scrapbook";
+import { DoodleArrow, DoodleHeart, CoffeeRing, Stamp } from "@/components/Doodles";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
@@ -42,8 +43,10 @@ export default function Contact() {
     <section
       id="contact"
       data-testid={CONTACT.root}
-      className="relative bg-paper-grain py-24 md:py-32"
+      className="relative bg-paper-grain py-24 md:py-32 overflow-hidden"
     >
+      <CoffeeRing className="right-12 top-32 hidden md:block" />
+      <DoodleHeart className="absolute left-10 bottom-40 hidden md:block -rotate-12" size={28} />
       <div className="max-w-6xl mx-auto px-6 md:px-10 grid grid-cols-12 gap-10">
         {/* Letter */}
         <div className="col-span-12 lg:col-span-7">
@@ -119,8 +122,11 @@ export default function Contact() {
             </label>
 
             <div className="mt-8 flex items-end justify-between gap-4 flex-wrap">
-              <div className="font-hand text-2xl text-ink/70">
-                yours, <span className="text-wine">— a future friend</span>
+              <div className="flex items-end gap-4">
+                <div className="font-hand text-2xl text-ink/70">
+                  yours, <span className="text-wine">— a future friend</span>
+                </div>
+                <Stamp rotate="rotate-[8deg]" className="hidden sm:inline-flex">Sealed · with love</Stamp>
               </div>
               <button
                 data-testid={CONTACT.submit}
