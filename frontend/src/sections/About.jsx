@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Polaroid, PullQuote, StickyNote, Annotation } from "@/components/Scrapbook";
-import { DoodleCircle } from "@/components/Doodles";
 import { ABOUT } from "@/constants/testIds";
 
 export default function About() {

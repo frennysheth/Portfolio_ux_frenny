@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Mail } from "lucide-react";
 import { Polaroid, TapeStrip, Annotation } from "@/components/Scrapbook";
-import { DoodleArrow, DoodleStar, DoodleCircle, DoodleHeart, Stamp, CoffeeRing } from "@/components/Doodles";
+import { DoodleArrow, DoodleHeart, CoffeeRing } from "@/components/Doodles";
 import MagneticButton from "@/components/MagneticButton";
 import { HERO } from "@/constants/testIds";
 
