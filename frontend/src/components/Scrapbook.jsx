@@ -16,7 +16,7 @@ export function TapeStrip({ className, style, color = "rgba(249,203,214,0.7)" })
 }
 
 // Polaroid card with intentional tilt, hover-straighten, optional caption.
-export function Polaroid({ src, alt, caption, rotate = "-rotate-3", className, testId, scale = 1 }) {
+export function Polaroid({ src, alt, caption, rotate = "-rotate-3", className, testId, scale = 1, noTape = false }) {
   return (
     <motion.figure
       data-testid={testId}
@@ -32,10 +32,12 @@ export function Polaroid({ src, alt, caption, rotate = "-rotate-3", className, t
       )}
       style={{ background: "#FAF7F2" }}
     >
-      <TapeStrip
-        className="-top-3 left-1/2 -translate-x-1/2 rotate-[-4deg]"
-        color="rgba(255,255,255,0.55)"
-      />
+      {noTape ? null : (
+        <TapeStrip
+          className="-top-3 left-1/2 -translate-x-1/2 rotate-[-4deg]"
+          color="rgba(255,255,255,0.55)"
+        />
+      )}
       <div className="overflow-hidden bg-oat">
         <img
           src={src}

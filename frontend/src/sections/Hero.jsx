@@ -113,18 +113,12 @@ export default function Hero() {
 
           <div className="mt-12 hidden md:block relative">
             <Annotation>
-              ↘ keep scrolling, gently
+              ↖ flip through my work
             </Annotation>
-            <DoodleStar className="absolute -top-4 left-48 rotate-12" size={24} />
-            <DoodleArrow className="absolute -top-6 left-64" direction="se" size={70} />
-            <CoffeeRing className="left-80 top-2" small />
+            <DoodleArrow className="absolute -top-16 left-44" direction="nw" size={90} />
           </div>
 
-          {/* Stamps overlay */}
-          <div className="hidden md:flex absolute right-8 top-44 flex-col items-end gap-3">
-            <Stamp rotate="rotate-3">UX · Product · Story</Stamp>
-            <Stamp rotate="-rotate-2">Open to work · 2026</Stamp>
-          </div>
+          {/* Stamps removed per request */}
         </div>
 
         {/* Polaroid collage */}
@@ -136,6 +130,7 @@ export default function Hero() {
               alt="Frenny on the steps"
               caption="quiet moments"
               rotate="-rotate-6"
+              noTape
             />
           </motion.div>
 
@@ -146,6 +141,7 @@ export default function Hero() {
               alt="Frenny among flowers"
               caption="ahmedabad, dec"
               rotate="rotate-3"
+              noTape
             />
           </motion.div>
 
@@ -156,6 +152,7 @@ export default function Hero() {
               alt="Frenny smiling"
               caption="cousin's wedding"
               rotate="rotate-[7deg]"
+              noTape
             />
           </motion.div>
 

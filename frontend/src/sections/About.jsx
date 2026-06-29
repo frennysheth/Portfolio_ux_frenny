@@ -16,14 +16,11 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="mt-4 font-display text-5xl md:text-7xl leading-[0.95] text-ink relative"
+            className="mt-4 font-display text-5xl md:text-7xl leading-[0.95] text-ink"
             style={{ fontVariationSettings: '"opsz" 144, "SOFT" 80, "WONK" 1' }}
           >
             I came in through the{" "}
-            <span className="relative inline-block">
-              <span className="italic text-wine" style={{ fontFamily: '"Instrument Serif", serif' }}>side door</span>
-              <DoodleCircle className="absolute -inset-2 -top-3 hidden sm:block" w={200} h={70} />
-            </span>
+            <span className="italic text-wine" style={{ fontFamily: '"Instrument Serif", serif' }}>side door</span>
             .
           </motion.h2>
 

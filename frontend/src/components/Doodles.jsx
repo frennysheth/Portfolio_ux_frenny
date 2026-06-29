@@ -9,12 +9,18 @@ export function DoodleArrow({ className, color = "#9E182B", direction = "se", si
     sw: "M85 8 C 60 4, 20 12, 12 60",
     down: "M45 5 C 40 30, 50 50, 45 80",
     right: "M5 30 C 30 20, 60 40, 80 28",
+    nw: "M78 70 C 60 65, 25 55, 10 12",
+    ne: "M10 70 C 30 65, 60 55, 78 12",
+    up: "M45 75 C 50 50, 40 30, 45 5",
   };
   const heads = {
     se: "M62 50 L78 60 L70 44",
     sw: "M28 50 L12 60 L20 44",
     down: "M30 65 L45 80 L60 65",
     right: "M68 18 L80 28 L66 38",
+    nw: "M22 8 L10 12 L20 22",
+    ne: "M68 8 L80 12 L70 22",
+    up: "M30 18 L45 5 L60 18",
   };
   return (
     <svg
