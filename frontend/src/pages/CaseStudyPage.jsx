@@ -176,6 +176,58 @@ export default function CaseStudyPage() {
           <p className="italic">{project.reflection}</p>
         </Section>
 
+        {/* Design Showcase — the actual Behance project artwork */}
+        {project.behanceImage ? (
+          <section className="bg-paper-grain py-20 md:py-28">
+            <div className="max-w-6xl mx-auto px-6 md:px-10">
+              <div className="text-xs uppercase tracking-[0.4em] text-wine">Design Showcase</div>
+              <h2 className="mt-2 font-display text-4xl md:text-6xl text-ink leading-tight">
+                The actual <span className="italic text-wine">artwork</span>.
+              </h2>
+              <p className="mt-3 font-serif text-lg text-ink/70 max-w-2xl">
+                Every wireframe, screen, and final composition — pulled straight from the case
+                study. Tap to open full-size on Behance.
+              </p>
+
+              <motion.a
+                href={project.behance}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.7 }}
+                className="relative block mt-10 group cursor-pointer"
+                data-testid="case-study-design-image"
+              >
+                <TapeStrip
+                  className="-top-4 left-10 rotate-[-4deg] z-10"
+                  color="rgba(249,203,214,0.9)"
+                />
+                <TapeStrip
+                  className="-top-4 right-10 rotate-[5deg] z-10"
+                  color="rgba(242,224,210,0.9)"
+                />
+                <div className="relative bg-paper polaroid-shadow overflow-hidden">
+                  <div className="max-h-[80vh] overflow-y-auto" data-lenis-prevent>
+                    <img
+                      src={project.behanceImage}
+                      alt={`${project.title} — full case study design`}
+                      className="w-full block transition-transform duration-700 group-hover:scale-[1.005]"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-paper to-transparent" />
+                  <div className="absolute bottom-4 right-4 inline-flex items-center gap-2 bg-wine text-paper px-4 py-2 rounded-full text-xs uppercase tracking-[0.25em] shadow-lg">
+                    Open on Behance <ExternalLink size={14} />
+                  </div>
+                </div>
+                <Annotation className="block mt-4 text-center">↑ scroll inside the frame to flip through</Annotation>
+              </motion.a>
+            </div>
+          </section>
+        ) : null}
+
         {/* CTA */}
         <section className="bg-paper-grain py-20">
           <div className="max-w-4xl mx-auto px-6 md:px-10 text-center">

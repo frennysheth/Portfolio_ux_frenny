@@ -12,6 +12,7 @@ export const PROJECTS = [
       "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1600&q=80",
     palette: "#F2AFBC",
     behance: "https://www.behance.net/gallery/210583063/UNI-Mate-LMS-Case-Study",
+    behanceImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/c50ed2210583063.6713dd82e1b2c.png",
     summary:
       "UNI-Mate reimagines the daily life of an Indian engineering student — assignments, attendance, club chatter, and mentor meetings — inside one calm, well-paced LMS.",
     problem:
@@ -76,6 +77,7 @@ export const PROJECTS = [
       "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1600&q=80",
     palette: "#F9CBD6",
     behance: "https://www.behance.net/gallery/206355587/Gro-Deliver-A-Grocery-App-Case-Study",
+    behanceImage: "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/969efd206355587.66cb5428cf87f.png",
     summary:
       "Gro-Deliver is built around the moment you realise the onions are gone. The case study explores how 'urgency design' can stay calm rather than chaotic.",
     problem:
@@ -132,6 +134,7 @@ export const PROJECTS = [
       "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80",
     palette: "#9E182B",
     behance: "https://www.behance.net/gallery/244913019/CANNON-SHOOTER-(GAME-UI)",
+    behanceImage: "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/8c9917244913019.69a1a387303d4.png",
     summary:
       "A casual mobile shooter where the interface is the unsung hero — fast feedback, no clutter, and a HUD that disappears when you're in flow.",
     problem:
@@ -188,6 +191,7 @@ export const PROJECTS = [
       "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1600&q=80",
     palette: "#F2AFBC",
     behance: "https://www.behance.net/gallery/201969347/FITNESS-APP",
+    behanceImage: "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/168c9a201969347.667d9d3c90ac9.png",
     summary:
       "Bloom is a wellness-first fitness app for women who've quietly fallen off every other one. Built around tiny, kind rituals rather than streaks.",
     problem:
