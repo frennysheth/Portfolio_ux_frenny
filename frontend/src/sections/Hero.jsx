@@ -176,7 +176,7 @@ export default function Hero() {
 
       {/* Decorative scattered elements */}
       <CoffeeRing className="left-6 bottom-32 hidden md:block" />
-      <DoodleStar className="absolute right-24 bottom-24 hidden md:block rotate-12" size={28} />
+      <DoodleArrow className="absolute right-24 bottom-24 hidden md:block" direction="down" size={50} />
 
       {/* Bottom paper rip */}
       <div className="absolute bottom-0 left-0 right-0">
