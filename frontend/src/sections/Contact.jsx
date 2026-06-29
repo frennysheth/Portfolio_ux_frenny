@@ -233,7 +233,7 @@ export default function Contact() {
             </a>
 
             <div className="pt-6">
-              <Annotation>p.s. tea over coffee, mostly</Annotation>
+              <Annotation>p.s. coffee over tea, mostly</Annotation>
             </div>
           </div>
         </div>
