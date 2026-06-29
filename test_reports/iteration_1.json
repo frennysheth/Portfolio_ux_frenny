@@ -1,0 +1,43 @@
+{
+  "summary": "Frontend-only regression run after bug-fix iteration on Frenny Sheth portfolio (Contact links, Hobbies content, Hobbies photo collage z-index, Hero masthead). All 8 verification points PASSED.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "verification_results": {
+    "contact_email_link": "PASS — tag=A href='mailto:ux.frenny@gmail.com' rel='noopener noreferrer'",
+    "contact_linkedin": "PASS — href=https://www.linkedin.com/in/frenny-sheth-6a972a1a9, target=_blank, click opened new tab to that exact URL",
+    "contact_behance": "PASS — href=https://www.behance.net/frennysheth, target=_blank, click opened new tab",
+    "contact_resume": "PASS — href ends in .pdf (customer-assets...z61e013t_Frenny_Sheth_CV_new.pdf), target=_blank, download attribute present, click opened new tab",
+    "hobby_reading": "PASS — 'freida mcfadden, lately'",
+    "hobby_travel": "PASS — 'saving for a europe trip'",
+    "hobby_movies": "PASS — 'clueless, on loop'",
+    "funfact_book": "PASS — 'The Midnight Library — Matt Haig'",
+    "photo_collage_zindex": "PASS — Frenny self-portrait (w2vz3omq) z-index=40 in front of books polaroid z-index=10 (coffee=20, film=10)",
+    "hero_polaroids": "PASS — All 3 keys present (rabnkos2, schg7m4n, n4zp4moa)",
+    "hero_masthead": "PASS — 'The Frenny Journal' and 'Ahmedabad · India' both visible; 'Issue 24' = 0 occurrences",
+    "overlay_block_check": "PASS — No fixed custom-cursor elements detected; elementFromPoint at LinkedIn link center returns the <a data-testid='contact-linkedin'> itself (no overlay intercepting clicks)"
+  },
+  "notes": [
+    "The substring 'Vancouver' is present once in the page — but it lives in the Education section ('Lemon Logic Studio · Vancouver, Canada · Internship'), NOT in the Hero masthead. Masthead correctly reads 'Ahmedabad · India'. This is expected per portfolio.js content and not a regression.",
+    "contact-email-link does not have target='_blank' (mailto links typically don't need it). Request only required href=mailto:ux.frenny@gmail.com — verified.",
+    "Lenis smooth-scroll did not interfere with clicks. Custom cursor (if present) has pointer-events:none and is not blocking link clicks."
+  ],
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Contact.jsx (~243 lines) — clean, all 4 sidebar links use proper <a> with target/rel/download as appropriate. No issues.",
+    "Hobbies.jsx — z-index hierarchy is explicit (z-10/z-20/z-40) and verified at runtime. Good.",
+    "Minor (non-blocking): the Polaroid containing div uses Tailwind utility classes (z-10/z-20/z-40) which compile to numeric z-index — works as expected."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "n/a (not tested)", "frontend": "100%"},
+  "test_credentials": "n/a",
+  "seed_data_creation": "none",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "All Contact link bug fixes are verified working in the live preview (LinkedIn, Behance, Resume all open new tabs on click; mailto correct). Hobby text content and Funfact updated. Photo collage z-index ordering correct (Frenny front, books behind). Hero masthead is 'The Frenny Journal' / 'Ahmedabad · India'. 'Vancouver' string still exists in Education timeline (Lemon Logic Studio internship) which is intentional content — do not flag.",
+  "rca of the issue": "Previous bug report ('links not working for linkedin/behance/resume') has been resolved by main agent: links now render as proper <a> tags with explicit target='_blank', rel='noopener noreferrer', cursor-pointer, and (for resume) download attribute. No overlay (custom cursor / Lenis smooth-scroll wrapper) is intercepting pointer events at the link coordinates — verified via elementFromPoint."
+}

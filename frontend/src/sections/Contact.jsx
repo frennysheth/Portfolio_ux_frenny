@@ -167,7 +167,8 @@ export default function Contact() {
             <a
               href="mailto:ux.frenny@gmail.com"
               data-testid={CONTACT.email_link}
-              className="group flex items-center justify-between p-5 bg-paper polaroid-shadow hover:rotate-[-1deg] transition-transform"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-between p-5 bg-paper polaroid-shadow hover:rotate-[-1deg] transition-transform cursor-pointer"
             >
               <div className="flex items-center gap-3">
                 <Mail size={20} className="text-wine" />
@@ -182,9 +183,9 @@ export default function Contact() {
             <a
               href="https://www.linkedin.com/in/frenny-sheth-6a972a1a9"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               data-testid={CONTACT.linkedin}
-              className="group flex items-center justify-between p-5 bg-paper polaroid-shadow hover:rotate-[1deg] transition-transform"
+              className="group flex items-center justify-between p-5 bg-paper polaroid-shadow hover:rotate-[1deg] transition-transform cursor-pointer"
             >
               <div className="flex items-center gap-3">
                 <Linkedin size={20} className="text-wine" />
@@ -199,9 +200,9 @@ export default function Contact() {
             <a
               href="https://www.behance.net/frennysheth"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               data-testid={CONTACT.behance}
-              className="group flex items-center justify-between p-5 bg-paper polaroid-shadow hover:rotate-[-1deg] transition-transform"
+              className="group flex items-center justify-between p-5 bg-paper polaroid-shadow hover:rotate-[-1deg] transition-transform cursor-pointer"
             >
               <div className="flex items-center gap-3">
                 <span className="font-display text-wine text-2xl leading-none">Bē</span>
@@ -214,17 +215,18 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://www.behance.net/frennysheth"
+              href="https://customer-assets.emergentagent.com/job_281b2b92-0a11-451c-867d-2bc5903625e9/artifacts/z61e013t_Frenny_Sheth_CV_new.pdf"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              download
               data-testid={CONTACT.resume}
-              className="group flex items-center justify-between p-5 bg-wine text-paper polaroid-shadow hover:rotate-[1deg] transition-transform"
+              className="group flex items-center justify-between p-5 bg-wine text-paper polaroid-shadow hover:rotate-[1deg] transition-transform cursor-pointer"
             >
               <div className="flex items-center gap-3">
                 <FileText size={20} />
                 <div>
-                  <div className="font-serif text-xl">View Resume</div>
-                  <div className="text-xs uppercase tracking-[0.2em] text-paper/70">PDF, latest</div>
+                  <div className="font-serif text-xl">Download Resume</div>
+                  <div className="text-xs uppercase tracking-[0.2em] text-paper/70">PDF · updated 2026</div>
                 </div>
               </div>
               <ExternalLink size={16} className="text-paper/70 group-hover:text-paper" />

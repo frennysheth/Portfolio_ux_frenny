@@ -271,9 +271,9 @@ export const HOBBIES = [
   { key: "photography", label: "Photography", note: "always have a film roll waiting", emoji: null },
   { key: "journals", label: "Journaling", note: "three notebooks in rotation" },
   { key: "coffee", label: "Coffee shops", note: "oat milk, no sugar, window seat" },
-  { key: "reading", label: "Reading", note: "Murakami in monsoon" },
-  { key: "travel", label: "Travel", note: "saving for Kyoto" },
-  { key: "movies", label: "Movies", note: "Wes Anderson, on loop" },
+  { key: "reading", label: "Reading", note: "freida mcfadden, lately" },
+  { key: "travel", label: "Travel", note: "saving for a europe trip" },
+  { key: "movies", label: "Movies", note: "clueless, on loop" },
   { key: "pinterest", label: "Pinterest", note: "2,143 pins · counting" },
   { key: "writing", label: "Writing", note: "essays nobody reads (yet)" },
 ];

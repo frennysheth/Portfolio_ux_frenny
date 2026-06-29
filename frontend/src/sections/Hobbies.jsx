@@ -71,17 +71,17 @@ export default function Hobbies() {
 
           {/* Image collage */}
           <div className="col-span-12 lg:col-span-5 relative min-h-[420px]">
-            <div className="absolute top-0 left-0 w-44 md:w-52 z-30">
-              <Polaroid src={COLLAGE[0]} alt="self portrait" caption="behind the lens" rotate="-rotate-6" />
-            </div>
-            <div className="absolute top-20 right-0 w-40 md:w-48 z-20">
+            <div className="absolute top-0 left-0 w-44 md:w-52 z-10">
               <Polaroid src={COLLAGE[1]} alt="books" caption="weekend read" rotate="rotate-3" />
             </div>
-            <div className="absolute bottom-0 left-10 w-44 md:w-52 z-40">
+            <div className="absolute top-12 right-0 w-40 md:w-48 z-20">
               <Polaroid src={COLLAGE[2]} alt="coffee" caption="oat milk, no sugar" rotate="rotate-2" />
             </div>
             <div className="absolute bottom-12 right-12 w-32 md:w-40 z-10">
               <Polaroid src={COLLAGE[3]} alt="film" caption="35mm · pentax" rotate="-rotate-3" />
+            </div>
+            <div className="absolute bottom-0 left-10 w-52 md:w-64 z-40">
+              <Polaroid src={COLLAGE[0]} alt="self portrait" caption="behind the lens" rotate="-rotate-6" scale={1.05} />
             </div>
           </div>
         </div>
