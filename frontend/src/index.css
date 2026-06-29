@@ -36,9 +36,19 @@ body {
   margin: 0;
   background: #F2E0D2;
   color: #2A2626;
-  font-family: "Manrope", sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Variable axis tuning for Fraunces — gives headlines that magazine-cover punch */
+.font-display,
+.font-serif {
+  font-variation-settings: "opsz" 144, "SOFT" 50, "WONK" 0;
+}
+.font-display.is-wonky,
+h1.font-display {
+  font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
 }
 
 /* Paper texture background */

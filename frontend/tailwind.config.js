@@ -30,10 +30,11 @@ module.exports = {
         sticky_mint: "#E8F0E2",
       },
       fontFamily: {
-        serif: ['"Cormorant Garamond"', "serif"],
-        sans: ["Manrope", "sans-serif"],
-        display: ["Gloock", "serif"],
-        hand: ["Caveat", "cursive"],
+        serif: ['"Fraunces"', "serif"],
+        sans: ['"Bricolage Grotesque"', "sans-serif"],
+        display: ['"Fraunces"', "serif"],
+        italic: ['"Instrument Serif"', "serif"],
+        hand: ['"Caveat Brush"', "cursive"],
         handwriting: ['"Homemade Apple"', "cursive"],
       },
       borderRadius: {
