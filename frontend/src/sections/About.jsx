@@ -70,13 +70,6 @@ export default function About() {
                 <Annotation>← exhibit A</Annotation>
               </div>
             </div>
-            <Polaroid
-              src="https://images.unsplash.com/photo-1657209956208-479abaebbfa3?auto=format&fit=crop&w=900&q=80"
-              alt="Journal flatlay"
-              caption="three notebooks, always"
-              rotate="-rotate-2"
-              className="ml-8"
-            />
           </div>
         </div>
       </div>

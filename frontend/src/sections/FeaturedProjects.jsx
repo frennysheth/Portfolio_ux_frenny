@@ -53,7 +53,7 @@ export default function FeaturedProjects() {
                   src={p.cover}
                   alt={p.title}
                   loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 />
                 <span
                   className="absolute top-3 left-3 text-[10px] uppercase tracking-[0.3em] px-2 py-1 rounded-full"

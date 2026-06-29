@@ -10,10 +10,14 @@ import { Annotation, PullQuote, StickyNote, TapeStrip } from "@/components/Scrap
 
 const Section = ({ kicker, title, children, color = "bg-paper-grain" }) => (
   <section className={"py-16 md:py-24 " + color}>
-    <div className="max-w-5xl mx-auto px-6 md:px-10">
-      <div className="text-xs uppercase tracking-[0.4em] text-wine">{kicker}</div>
-      <h2 className="mt-2 font-display text-4xl md:text-6xl text-ink leading-tight">{title}</h2>
-      <div className="mt-8 font-serif text-lg md:text-xl text-ink/90 leading-relaxed">{children}</div>
+    <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+      <div className="lg:col-span-4 xl:col-span-4 lg:sticky lg:top-28">
+        <div className="text-xs uppercase tracking-[0.4em] text-wine">{kicker}</div>
+        <h2 className="mt-2 font-display text-4xl md:text-5xl xl:text-6xl text-ink leading-tight">{title}</h2>
+      </div>
+      <div className="lg:col-span-8 xl:col-span-8 font-serif text-lg md:text-xl text-ink/90 leading-relaxed">
+        {children}
+      </div>
     </div>
   </section>
 );
@@ -34,7 +38,7 @@ export default function CaseStudyPage() {
       <main data-testid={CASE_STUDY.root}>
         {/* Cover */}
         <section className="relative bg-paper-grain pt-28 md:pt-36 pb-16">
-          <div className="max-w-6xl mx-auto px-6 md:px-10">
+          <div className="max-w-7xl mx-auto px-6 md:px-10">
             <Link
               to="/#projects"
               data-testid={CASE_STUDY.back}
@@ -77,7 +81,7 @@ export default function CaseStudyPage() {
             <div className="relative mt-12">
               <TapeStrip className="-top-3 left-12 rotate-[-4deg]" color="rgba(249,203,214,0.9)" />
               <div className="relative overflow-hidden polaroid-shadow" style={{ aspectRatio: "16/8" }}>
-                <img src={project.cover} alt={project.title} className="w-full h-full object-cover" />
+                <img src={project.cover} alt={project.title} className="w-full h-full object-cover object-top" />
               </div>
             </div>
           </div>
@@ -179,7 +183,7 @@ export default function CaseStudyPage() {
         {/* Design Showcase — the actual Behance project artwork */}
         {project.behanceImage ? (
           <section className="bg-paper-grain py-20 md:py-28">
-            <div className="max-w-6xl mx-auto px-6 md:px-10">
+            <div className="max-w-7xl mx-auto px-6 md:px-10">
               <div className="text-xs uppercase tracking-[0.4em] text-wine">Design Showcase</div>
               <h2 className="mt-2 font-display text-4xl md:text-6xl text-ink leading-tight">
                 The actual <span className="italic text-wine">artwork</span>.
