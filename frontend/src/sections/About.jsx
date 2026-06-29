@@ -15,9 +15,15 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="mt-4 font-display text-5xl md:text-7xl leading-[0.95] text-ink"
+            className="mt-4 font-display text-5xl md:text-7xl leading-[0.95] text-ink relative"
+            style={{ fontVariationSettings: '"opsz" 144, "SOFT" 80, "WONK" 1' }}
           >
-            I came in through the <span className="italic text-wine">side door</span>.
+            I came in through the{" "}
+            <span className="relative inline-block">
+              <span className="italic text-wine" style={{ fontFamily: '"Instrument Serif", serif' }}>side door</span>
+              <DoodleCircle className="absolute -inset-2 -top-3 hidden sm:block" w={200} h={70} />
+            </span>
+            .
           </motion.h2>
 
           <div data-testid={ABOUT.body} className="mt-8 space-y-6 font-serif text-lg md:text-xl leading-relaxed text-ink/90">
@@ -70,6 +76,13 @@ export default function About() {
                 <Annotation>← exhibit A</Annotation>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+        </div>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Mail } from "lucide-react";
 import { Polaroid, TapeStrip, Annotation } from "@/components/Scrapbook";
+import { DoodleArrow, DoodleStar, DoodleCircle, DoodleHeart, Stamp, CoffeeRing } from "@/components/Doodles";
 import MagneticButton from "@/components/MagneticButton";
 import { HERO } from "@/constants/testIds";
 
@@ -37,7 +38,13 @@ export default function Hero() {
         <div className="flex items-center justify-between text-[10px] md:text-xs uppercase tracking-[0.4em] text-ink/60">
           <span>The Frenny Journal</span>
           <span className="hidden md:block">Ahmedabad · India</span>
-          <span>Winter, 2026</span>
+          <span className="inline-flex items-center gap-2">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-wine opacity-60" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-wine" />
+            </span>
+            Currently designing…
+          </span>
         </div>
         <div className="mt-3 border-t border-ink/30" />
       </div>
@@ -75,10 +82,9 @@ export default function Hero() {
               data-testid={HERO.subtitle}
               className="font-serif text-2xl md:text-3xl text-ink leading-snug"
             >
-              UX Designer · Product Thinker · Quiet Storyteller.
+              I ask <em className="italic text-wine" style={{ fontFamily: '"Instrument Serif", serif' }}>"why?"</em> a little too often.
               <span className="block mt-2 text-ink/70 text-lg md:text-xl">
-                I design experiences that feel <em className="font-serif italic text-wine">handwritten</em> —
-                research-led, human-paced, and a little bit poetic.
+                Turns out, that's a useful UX skill.
               </span>
             </p>
           </motion.div>
@@ -105,10 +111,19 @@ export default function Hero() {
             </MagneticButton>
           </motion.div>
 
-          <div className="mt-12 hidden md:block">
+          <div className="mt-12 hidden md:block relative">
             <Annotation>
               ↘ keep scrolling, gently
             </Annotation>
+            <DoodleStar className="absolute -top-4 left-48 rotate-12" size={24} />
+            <DoodleArrow className="absolute -top-6 left-64" direction="se" size={70} />
+            <CoffeeRing className="left-80 top-2" small />
+          </div>
+
+          {/* Stamps overlay */}
+          <div className="hidden md:flex absolute right-8 top-44 flex-col items-end gap-3">
+            <Stamp rotate="rotate-3">UX · Product · Story</Stamp>
+            <Stamp rotate="-rotate-2">Open to work · 2026</Stamp>
           </div>
         </div>
 
@@ -155,8 +170,16 @@ export default function Hero() {
               currently · ux + product
             </motion.div>
           </div>
+
+          {/* Loose doodles around the polaroid stack */}
+          <DoodleHeart className="absolute -top-2 left-4 -rotate-12" size={28} />
+          <DoodleArrow className="absolute top-32 right-2 hidden md:block" direction="sw" size={70} />
         </div>
       </div>
+
+      {/* Decorative scattered elements */}
+      <CoffeeRing className="left-6 bottom-32 hidden md:block" />
+      <DoodleStar className="absolute right-24 bottom-24 hidden md:block rotate-12" size={28} />
 
       {/* Bottom paper rip */}
       <div className="absolute bottom-0 left-0 right-0">
