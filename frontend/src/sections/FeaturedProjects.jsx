@@ -16,7 +16,7 @@ export default function FeaturedProjects() {
         <div className="flex items-end justify-between flex-wrap gap-4 mb-12">
           <div>
             <span className="text-xs uppercase tracking-[0.4em] text-wine font-medium">
-              Chapter Three · Featured Case Studies
+              Chapter One · Featured Case Studies
             </span>
             <h2 className="mt-3 font-display text-5xl md:text-7xl text-ink leading-[0.95]">
               Four projects, <span className="italic text-wine">one obsession</span>.

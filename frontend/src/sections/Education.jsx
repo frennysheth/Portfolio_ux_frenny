@@ -14,7 +14,7 @@ export default function Education() {
         <div className="flex items-end justify-between flex-wrap gap-4">
           <div>
             <span className="text-xs uppercase tracking-[0.4em] text-wine font-medium">
-              Chapter Two · A short timeline
+              Chapter Three · A short timeline
             </span>
             <h2 className="mt-3 font-display text-4xl md:text-6xl text-ink leading-tight">
               Where I've been learning.
