@@ -45,7 +45,6 @@ export default function Nav() {
       <div className="max-w-7xl mx-auto px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
         <Link to="/" data-testid={NAV.logo} className="flex items-baseline gap-2">
           <span className="font-display text-2xl md:text-3xl text-wine leading-none">frenny.</span>
-          <span className="font-hand text-xl text-ink/70 leading-none">studio</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-7">

@@ -10,7 +10,7 @@ export default function FeaturedProjects() {
     <section
       id="projects"
       data-testid={TIDS.root}
-      className="relative bg-paper-cream py-24 md:py-32"
+      className="relative bg-paper-cream py-16 md:py-20"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="flex items-end justify-between flex-wrap gap-4 mb-12">

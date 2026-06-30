@@ -31,7 +31,7 @@ export default function Hero() {
       id="home"
       ref={ref}
       data-testid={HERO.root}
-      className="relative bg-paper-grain min-h-screen pt-28 md:pt-36 pb-24 overflow-hidden"
+      className="relative bg-paper-grain min-h-screen pt-28 md:pt-32 pb-12 overflow-hidden"
     >
       {/* Editorial masthead */}
       <div className="max-w-7xl mx-auto px-6 md:px-10">

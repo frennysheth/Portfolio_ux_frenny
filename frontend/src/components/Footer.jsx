@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="relative bg-ink text-paper py-14">
       <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
         <div>
-          <div className="font-display text-3xl">frenny.studio</div>
+          <div className="font-display text-3xl">frenny.</div>
           <div className="font-hand text-xl text-paper/60 mt-1">est. 2024</div>
         </div>
         <div className="font-serif italic text-paper/80 text-lg md:text-center">

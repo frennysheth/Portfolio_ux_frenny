@@ -16,9 +16,9 @@ export default function HomePage() {
       <Nav />
       <main>
         <Hero />
+        <FeaturedProjects />
         <About />
         <Education />
-        <FeaturedProjects />
         <DesignProcess />
         <Hobbies />
         <Skills />
