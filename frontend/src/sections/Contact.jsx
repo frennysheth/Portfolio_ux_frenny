@@ -221,7 +221,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://customer-assets.emergentagent.com/job_281b2b92-0a11-451c-867d-2bc5903625e9/artifacts/z61e013t_Frenny_Sheth_CV_new.pdf"
+              href="https://customer-assets.emergentagent.com/job_frenny-ux-magazine/artifacts/raikciv2_Frenny_sheth_cv_new.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
