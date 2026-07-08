@@ -318,10 +318,4 @@ export const EDUCATION_ITEMS = [
     place: "Vancouver, Canada · Internship",
     note: "shipping client work, learning at studio speed.",
   },
-  {
-    year: "next",
-    title: "M.Des · IUxD",
-    place: "DAIICT (in preparation)",
-    note: "the chapter I'm quietly writing.",
-  },
 ];
