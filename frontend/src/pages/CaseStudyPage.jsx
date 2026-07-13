@@ -82,8 +82,16 @@ export default function CaseStudyPage() {
 
             <div className="mt-6 sm:mt-8 grid grid-cols-12 gap-6 sm:gap-8 items-end">
               <div className="col-span-12 md:col-span-7">
-                <div className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-wine">
-                  Case Study · {project.year}
+                <div className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-wine flex items-center gap-3">
+                  <span>Case Study · {project.year}</span>
+                  {project.context ? (
+                    <>
+                      <span className="w-6 h-px bg-wine/40" />
+                      <span className="bg-wine text-paper px-2.5 py-1 rounded-full tracking-[0.25em]">
+                        {project.context}
+                      </span>
+                    </>
+                  ) : null}
                 </div>
                 <motion.h1
                   initial={{ opacity: 0, y: 30 }}
@@ -129,6 +137,19 @@ export default function CaseStudyPage() {
         {/* Summary */}
         <Section num={1} kicker="Overview" title="The story, in one breath." italicWord="story" color="bg-paper-cream">
           <p>{project.summary}</p>
+          {project.contextDetail ? (
+            <div className="mt-8 border-l-4 border-wine bg-paper/60 pl-6 py-4 -rotate-[0.4deg]">
+              <div className="text-[10px] uppercase tracking-[0.3em] text-wine font-medium">
+                Context · {project.context}
+              </div>
+              <p
+                className="mt-2 text-lg md:text-xl italic"
+                style={{ fontFamily: '"Instrument Serif", serif' }}
+              >
+                {project.contextDetail}
+              </p>
+            </div>
+          ) : null}
           <PullQuote by={project.title}>{project.subtitle}</PullQuote>
         </Section>
 

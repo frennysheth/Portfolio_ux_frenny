@@ -61,6 +61,14 @@ export default function FeaturedProjects() {
                 >
                   case study · 0{i + 1}
                 </span>
+                {p.context ? (
+                  <span
+                    className="absolute top-3 right-3 text-[10px] uppercase tracking-[0.25em] px-3 py-1 rounded-full font-medium"
+                    style={{ background: "#9E182B", color: "#FAF7F2" }}
+                  >
+                    {p.context}
+                  </span>
+                ) : null}
               </div>
               <div className="mt-5">
                 <div className="flex items-baseline justify-between gap-4">

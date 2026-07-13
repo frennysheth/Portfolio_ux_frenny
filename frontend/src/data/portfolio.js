@@ -7,6 +7,9 @@ export const PROJECTS = [
     role: "UX Researcher · UI Designer",
     duration: "8 weeks",
     year: "2024",
+    context: "Academic",
+    contextDetail:
+      "UNI-Mate is my academic capstone — but its DNA goes further back. I combined the core ideas from two earlier engineering projects (a diploma-era attendance system and a bachelor's project on classroom digitisation) into one unified redesign of the campus experience.",
     tools: ["Figma", "FigJam"],
     cover:
       "https://mir-s3-cdn-cf.behance.net/projects/max_808/e01028210583063.Y3JvcCwxMDAzLDc4NSwyMTEsMTE5.png",
@@ -72,6 +75,9 @@ export const PROJECTS = [
     role: "Product Designer · Researcher",
     duration: "6 weeks",
     year: "2024",
+    context: "Self-initiated",
+    contextDetail:
+      "A self-initiated case study born from personal frustration with how quick-commerce apps treat their users. Everything from research to hi-fi was done on my own time, on my own terms.",
     tools: ["Figma", "FigJam"],
     cover:
       "https://mir-s3-cdn-cf.behance.net/projects/max_808/9597c5206355587.Y3JvcCw4MTYsNjM4LDQ0LDExMQ.png",
@@ -129,6 +135,9 @@ export const PROJECTS = [
     role: "Game UI Designer",
     duration: "4 weeks",
     year: "2025",
+    context: "Internship",
+    contextDetail:
+      "Built during my internship at Lemon Logic Interactive Studio, Vancouver. My first shipped game UI — every decision had to hold up against real players, real analytics, and a real launch window.",
     tools: ["Figma", "FigJam"],
     cover:
       "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/8c9917244913019.69a1a387303d4.png",
@@ -186,6 +195,9 @@ export const PROJECTS = [
     role: "UX Designer",
     duration: "5 weeks",
     year: "2023",
+    context: "Self-initiated",
+    contextDetail:
+      "A self-initiated deep-dive into women's wellness. I chose the brief, ran the research, and pushed the visual direction — no client, no rubric, just curiosity.",
     tools: ["Figma", "FigJam"],
     cover:
       "https://mir-s3-cdn-cf.behance.net/projects/max_808/784abc201969347.Y3JvcCwxNTc0LDEyMzEsMzE1LDA.png",
