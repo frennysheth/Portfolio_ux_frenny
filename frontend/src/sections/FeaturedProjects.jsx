@@ -6,6 +6,9 @@ import { PROJECTS as TIDS } from "@/constants/testIds";
 import { TapeStrip, Annotation } from "@/components/Scrapbook";
 
 export default function FeaturedProjects() {
+  const projects = [...PROJECTS].sort(
+    (a, b) => parseInt(b.year, 10) - parseInt(a.year, 10)
+  );
   return (
     <section
       id="projects"
@@ -30,7 +33,7 @@ export default function FeaturedProjects() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-14">
-          {PROJECTS.map((p, i) => (
+          {projects.map((p, i) => (
             <motion.article
               key={p.slug}
               data-testid={TIDS.card(p.slug)}
