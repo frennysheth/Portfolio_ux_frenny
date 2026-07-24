@@ -26,7 +26,7 @@ export default function ThemeToggle({ testId = "theme-toggle" }) {
       onClick={toggle}
       data-testid={testId}
       aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
-      className="relative inline-flex h-8 w-14 items-center rounded-full border border-wine/30 bg-paper/60 px-1 transition-colors hover:border-wine"
+      className="relative inline-flex h-8 w-14 items-center rounded-full border border-wine/40 bg-wine/10 px-1 transition-colors hover:border-wine"
     >
       <motion.span
         layout
