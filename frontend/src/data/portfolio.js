@@ -248,6 +248,67 @@ export const PROJECTS = [
       { label: "Daily Reflections", value: "5.2 / wk" },
     ],
   },
+  {
+    slug: "the-still-hours",
+    title: "The Still Hours",
+    subtitle: "Brand identity for a specialty coffee brand built on slow mornings.",
+    role: "Brand & Visual Designer",
+    duration: "4 weeks",
+    year: "2026",
+    context: "Self-initiated",
+    contextDetail:
+      "A self-initiated branding exploration. What began as an experiment with an AI-generated logo concept became a full identity system — refining the mark, building a palette, choosing type, and dressing it across real-world touchpoints.",
+    tools: ["Figma", "FigJam"],
+    cover:
+      "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/16288d253244165.6a63914209bc2.png",
+    palette: "#274D03",
+    behance: "https://www.behance.net/gallery/253244165/THE-STILL-HOURS_BRANDING",
+    behanceImage:
+      "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/16288d253244165.6a63914209bc2.png",
+    summary:
+      "The Still Hours is a conceptual identity for a specialty coffee brand inspired by slow mornings, quiet landscapes, and the ritual of pausing. The system pairs an illustrative badge logo with an earthy, grounding palette to make a cup of coffee feel like a moment of calm.",
+    problem:
+      "Specialty coffee branding tends to shout — neon signage, hyper-modern sans, loud gradients. There was room for a brand that whispers instead: one built around stillness, ritual, and the landscapes you daydream about on a slow morning.",
+    research: [
+      "Mood-boarding across slow-living, landscape, and heritage-café aesthetics",
+      "Audit of 8 specialty coffee brands' logos, palettes, and packaging",
+      "Exploration of an AI-generated logo concept as a starting spark",
+    ],
+    insights: [
+      "Earthy greens read as 'calm' and 'natural' far more than the usual coffee browns.",
+      "A badge/crest format signals craft and heritage in the café space.",
+      "The strongest brands survive being shrunk to a single monogram (TSH).",
+    ],
+    personas: [
+      {
+        name: "The Slow Morning",
+        archetype: "Brand Mood",
+        goal: "Feel like the first quiet sip before the day begins.",
+        pain: "Coffee branding that feels rushed and loud.",
+      },
+    ],
+    flows: [
+      "Primary badge logo → TSH monogram → wordmark lockup",
+      "Palette: deep forest #274D03, sage #C5E6A5, ink #080807, paper #FFFFFF",
+      "Type: Cormorant Garamond (display) + Libre Baskerville (text)",
+    ],
+    explorations:
+      "The identity centres on an arched badge — a mountain, a rising cup of steam, and 'THE STILL HOURS' curved around the crest. I paired an editorial serif (Cormorant Garamond) with a sturdier text serif (Libre Baskerville), then grounded everything in a forest-and-sage palette that feels more like a quiet hillside than a coffee counter.",
+    iterations: [
+      "Refined the AI-sparked concept into a clean, reproducible vector badge",
+      "Built a flexible TSH monogram for small-scale and stamp use",
+      "Applied the system across coffee bags, iced cups, totes, tees, stickers and cards",
+    ],
+    testing:
+      "Stress-tested the identity across nine real-world mockups — from a matte coffee bag to an iced cup, tote, t-shirt, and sticker sheet — to confirm the badge holds up at every scale and on every surface.",
+    reflection:
+      "The Still Hours taught me that branding is world-building. A logo is only the doorway; the palette, type, and applications are the rooms people actually walk through. Starting from an AI concept also showed me how much of the craft lives in the refinement, not the first idea.",
+    metrics: [
+      { label: "Touchpoints", value: "9" },
+      { label: "Core Palette", value: "4" },
+      { label: "Type Pairing", value: "2" },
+    ],
+  },
 ];
 
 export const SKILL_GROUPS = [
@@ -267,7 +328,7 @@ export const SKILL_GROUPS = [
     label: "Visual",
     rotation: "-rotate-1",
     color: "bg-sticky_pink",
-    items: ["Visual Design", "Design Systems", "Prototyping", "Figma", "Game UI"],
+    items: ["Visual Design", "Branding", "Design Systems", "Prototyping", "Figma", "Game UI"],
   },
   {
     label: "Build",
