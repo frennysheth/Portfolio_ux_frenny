@@ -1,5 +1,5 @@
 .App {
   min-height: 100vh;
-  background: #F2E0D2;
-  color: #2A2626;
+  background: var(--page-grain);
+  color: rgb(var(--c-ink));
 }

@@ -180,7 +180,7 @@ export default function Hero() {
 
       {/* Bottom paper rip */}
       <div className="absolute bottom-0 left-0 right-0">
-        <div className="torn-edge-top h-8 w-full" style={{ background: "#FAF7F2" }} />
+        <div className="torn-edge-top h-8 w-full" style={{ background: "var(--page-cream)" }} />
       </div>
     </section>
   );

@@ -4,6 +4,12 @@
 
 @layer base {
   :root {
+    /* Brand channels (light theme) */
+    --c-wine: 158 24 43;
+    --c-oat: 242 224 210;
+    --c-paper: 250 247 242;
+    --c-ink: 42 38 38;
+
     --background: 30 47% 89%;
     --foreground: 0 4% 16%;
     --card: 35 53% 96%;
@@ -24,6 +30,45 @@
     --input: 30 25% 80%;
     --ring: 350 75% 36%;
     --radius: 0.5rem;
+
+    /* Theme-aware surfaces used by scrapbook utilities */
+    --page-grain: #F2E0D2;
+    --page-cream: #FAF7F2;
+    --grain-dot-1: rgba(154, 24, 43, 0.04);
+    --grain-dot-2: rgba(42, 38, 38, 0.05);
+    --cream-dot: rgba(42, 38, 38, 0.04);
+  }
+
+  html.dark {
+    /* Brand channels (warm dark "desk" theme) */
+    --c-wine: 232 120 138;
+    --c-oat: 24 20 18;
+    --c-paper: 42 36 33;
+    --c-ink: 242 224 210;
+
+    --background: 20 12% 9%;
+    --foreground: 30 40% 89%;
+    --card: 20 12% 14%;
+    --card-foreground: 30 40% 89%;
+    --popover: 20 12% 14%;
+    --popover-foreground: 30 40% 89%;
+    --primary: 349 66% 69%;
+    --primary-foreground: 20 12% 9%;
+    --secondary: 20 10% 20%;
+    --secondary-foreground: 30 40% 89%;
+    --muted: 20 10% 18%;
+    --muted-foreground: 30 15% 70%;
+    --accent: 349 30% 30%;
+    --accent-foreground: 30 40% 89%;
+    --border: 20 10% 26%;
+    --input: 20 10% 26%;
+    --ring: 349 66% 69%;
+
+    --page-grain: #181412;
+    --page-cream: #201B18;
+    --grain-dot-1: rgba(232, 120, 138, 0.05);
+    --grain-dot-2: rgba(242, 224, 210, 0.05);
+    --cream-dot: rgba(242, 224, 210, 0.05);
   }
 }
 
@@ -34,11 +79,12 @@
 html,
 body {
   margin: 0;
-  background: #F2E0D2;
-  color: #2A2626;
+  background: var(--page-grain);
+  color: rgb(var(--c-ink));
   font-family: "Bricolage Grotesque", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 /* Variable axis tuning for Fraunces — gives headlines that magazine-cover punch */
@@ -53,17 +99,17 @@ h1.font-display {
 
 /* Paper texture background */
 .bg-paper-grain {
-  background-color: #F2E0D2;
+  background-color: var(--page-grain);
   background-image:
-    radial-gradient(rgba(154, 24, 43, 0.04) 1px, transparent 1px),
-    radial-gradient(rgba(42, 38, 38, 0.05) 1px, transparent 1px);
+    radial-gradient(var(--grain-dot-1) 1px, transparent 1px),
+    radial-gradient(var(--grain-dot-2) 1px, transparent 1px);
   background-size: 28px 28px, 18px 18px;
   background-position: 0 0, 14px 14px;
 }
 
 .bg-paper-cream {
-  background-color: #FAF7F2;
-  background-image: radial-gradient(rgba(42, 38, 38, 0.04) 1px, transparent 1px);
+  background-color: var(--page-cream);
+  background-image: radial-gradient(var(--cream-dot) 1px, transparent 1px);
   background-size: 20px 20px;
 }
 
@@ -160,10 +206,10 @@ html.lenis body {
 
 /* Lined paper for contact letter */
 .lined-paper {
-  background-color: #FAF7F2;
+  background-color: var(--page-cream);
   background-image:
     linear-gradient(to right, rgba(158, 24, 43, 0.18) 0, rgba(158, 24, 43, 0.18) 1px, transparent 1px),
-    repeating-linear-gradient(to bottom, transparent 0, transparent 39px, rgba(42, 38, 38, 0.12) 39px, rgba(42, 38, 38, 0.12) 40px);
+    repeating-linear-gradient(to bottom, transparent 0, transparent 39px, rgba(128, 110, 100, 0.25) 39px, rgba(128, 110, 100, 0.25) 40px);
   background-position: 56px 0, 0 0;
   background-repeat: no-repeat, repeat;
 }

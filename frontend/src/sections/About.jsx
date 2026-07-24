@@ -62,7 +62,7 @@ export default function About() {
               rotate="rotate-3"
             />
             <div className="relative">
-              <StickyNote color="#FCE3E8" rotate="-rotate-3" className="text-ink">
+              <StickyNote color="#FCE3E8" rotate="-rotate-3">
                 <p>
                   engineering taught me how things work.
                   <br />

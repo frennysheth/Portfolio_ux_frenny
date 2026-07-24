@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { NAV } from "@/constants/testIds";
 import MagneticButton from "@/components/MagneticButton";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const LINKS = [
   { key: "about", label: "About" },
@@ -68,16 +69,20 @@ export default function Nav() {
           >
             Write me a letter
           </a>
+          <ThemeToggle />
         </nav>
 
-        <button
-          data-testid={NAV.menuToggle}
-          aria-label="Open menu"
-          className="md:hidden p-2 text-ink"
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <X size={22} /> : <Menu size={22} />}
-        </button>
+        <div className="md:hidden flex items-center gap-3">
+          <ThemeToggle testId="theme-toggle-mobile" />
+          <button
+            data-testid={NAV.menuToggle}
+            aria-label="Open menu"
+            className="p-2 text-ink"
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
       </div>
 
       <AnimatePresence>

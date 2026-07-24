@@ -36,10 +36,10 @@ export default function FunFacts() {
                 className={"min-h-[160px]"}
               >
                 <StickyNote color={COLORS[i % COLORS.length]} rotate={rot}>
-                  <div className="text-[10px] uppercase tracking-[0.3em] font-sans text-wine">
+                  <div className="text-[10px] uppercase tracking-[0.3em] font-sans text-[#9E182B]">
                     {f.label}
                   </div>
-                  <div className="mt-2 font-hand text-2xl leading-snug text-ink">{f.value}</div>
+                  <div className="mt-2 font-hand text-2xl leading-snug text-[#2A2626]">{f.value}</div>
                 </StickyNote>
               </motion.li>
             );

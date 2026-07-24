@@ -71,11 +71,11 @@ export default function DesignProcess() {
                 }
               >
                 <StickyNote color={s.color} rotate={i % 2 === 0 ? "-rotate-3" : "rotate-2"} className="w-full">
-                  <div className="font-display text-2xl text-ink leading-none">
+                  <div className="font-display text-2xl text-[#2A2626] leading-none">
                     0{i + 1}
                   </div>
-                  <div className="font-serif text-xl text-ink mt-1">{s.title}</div>
-                  <div className="text-sm text-ink/70 font-sans mt-2">{s.note}</div>
+                  <div className="font-serif text-xl text-[#2A2626] mt-1">{s.title}</div>
+                  <div className="text-sm text-[#2A2626]/70 font-sans mt-2">{s.note}</div>
                 </StickyNote>
               </motion.li>
             ))}

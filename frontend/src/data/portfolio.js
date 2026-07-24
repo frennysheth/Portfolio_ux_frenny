@@ -260,7 +260,7 @@ export const PROJECTS = [
       "A freelance branding commission for a specialty coffee brand. What began as an experiment with an AI-generated logo concept became a full identity system — refining the mark, building a palette, choosing type, and dressing it across real-world touchpoints for the client.",
     tools: ["Figma", "FigJam"],
     cover:
-      "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/16288d253244165.6a63914209bc2.png",
+      "https://customer-assets-lxgj4vgw.emergentagent.net/job_frenny-ux-magazine/artifacts/cibxlwxe_COVER_TSH.png",
     palette: "#274D03",
     behance: "https://www.behance.net/gallery/253244165/THE-STILL-HOURS_BRANDING",
     behanceImage:

@@ -48,7 +48,7 @@ export function Polaroid({ src, alt, caption, rotate = "-rotate-3", className, t
         />
       </div>
       {caption ? (
-        <figcaption className="font-hand text-ink text-xl mt-3 text-center leading-none">
+        <figcaption className="font-hand text-[#2A2626] text-xl mt-3 text-center leading-none">
           {caption}
         </figcaption>
       ) : null}
@@ -67,7 +67,7 @@ export function StickyNote({ children, color = "#FDF8E2", rotate = "rotate-2", c
       whileHover={{ rotate: 0, y: -4 }}
       transition={{ type: "spring", stiffness: 160, damping: 18 }}
       className={cn(
-        "relative sticky-shadow p-5 font-hand text-ink text-xl leading-snug",
+        "relative sticky-shadow p-5 font-hand text-[#2A2626] text-xl leading-snug",
         rotate,
         className
       )}
