@@ -255,9 +255,9 @@ export const PROJECTS = [
     role: "Brand & Visual Designer",
     duration: "4 weeks",
     year: "2026",
-    context: "Self-initiated",
+    context: "Freelance",
     contextDetail:
-      "A self-initiated branding exploration. What began as an experiment with an AI-generated logo concept became a full identity system — refining the mark, building a palette, choosing type, and dressing it across real-world touchpoints.",
+      "A freelance branding commission for a specialty coffee brand. What began as an experiment with an AI-generated logo concept became a full identity system — refining the mark, building a palette, choosing type, and dressing it across real-world touchpoints for the client.",
     tools: ["Figma", "FigJam"],
     cover:
       "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/16288d253244165.6a63914209bc2.png",
