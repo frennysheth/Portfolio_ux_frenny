@@ -6,7 +6,9 @@ import { CONTACT } from "@/constants/testIds";
 import { Annotation } from "@/components/Scrapbook";
 import { DoodleArrow, DoodleHeart, CoffeeRing, Stamp } from "@/components/Doodles";
 
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+const API = process.env.REACT_APP_BACKEND_URL
+  ? `${process.env.REACT_APP_BACKEND_URL.replace(/\/$/, "")}/api`
+  : `/api`;
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
@@ -30,11 +32,12 @@ export default function Contact() {
       });
       if (ok) setForm({ name: "", email: "", subject: "", message: "" });
     } catch (err) {
+      console.error("Form error:", err);
       setStatus({
         state: "error",
         text:
           err.response?.data?.detail ||
-          "Something went wrong sending your letter. Please try the email link below.",
+          "Could not send automatically. Click the button below to send via your email app.",
       });
     }
   };
@@ -155,11 +158,23 @@ export default function Contact() {
               </div>
             ) : null}
             {status.state === "error" ? (
-              <div
-                data-testid={CONTACT.error}
-                className="mt-6 font-hand text-xl text-destructive"
-              >
-                ✗ {status.text}
+              <div className="mt-6 space-y-3">
+                <div
+                  data-testid={CONTACT.error}
+                  className="font-hand text-xl text-destructive"
+                >
+                  ✗ {status.text}
+                </div>
+                <a
+                  href={`mailto:ux.frenny@gmail.com?subject=${encodeURIComponent(
+                    form.subject || `A letter from ${form.name || "a friend"}`
+                  )}&body=${encodeURIComponent(
+                    `Hi Frenny,\n\n${form.message}\n\n— ${form.name} (${form.email})`
+                  )}`}
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-ink/5 hover:bg-wine hover:text-paper rounded-full text-xs font-serif transition-colors text-ink"
+                >
+                  <Mail size={14} /> Open in your Email App to send directly
+                </a>
               </div>
             ) : null}
           </motion.form>
