@@ -3,7 +3,8 @@
     "frontend": {
       "root": "frontend",
       "framework": "create-react-app",
-      "installCommand": "npm install --legacy-peer-deps"
+      "installCommand": "npm install --legacy-peer-deps",
+       "outputDirectory": "build"
     },
     "backend": {
       "root": "backend",
